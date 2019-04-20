@@ -1,0 +1,10 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+    <cache name="dictCache"
+           maxEntriesLocalHeap="200"
+           eternal="false"
+           overflowToDisk="true"
+           timeToIdleSeconds="10"
+           timeToLiveSeconds="600">
+    </cache>
+</ehcache>

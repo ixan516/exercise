@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.ixan.example.mapper.CheckLogMapper" >
+    <resultMap id="CheckLog" type="cn.ixan.example.domain.CheckLog">
+        <id property="id" column="id"/>
+        <result property="checkType" column="check_type" typeHandler="cn.ixan.example.domain.enums.CheckTypeHandler"/>
+    </resultMap>
+    <select id="selectAll" resultMap="CheckLog">
+        SELECT * FROM `check_log`
+    </select>
+</mapper>

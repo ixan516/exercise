@@ -1,0 +1,5 @@
+使用SimpleDateFormat作为共享变量产生线程安全问题，解决方案
+1.需要时创建该实例，在方法中创建
+2.synchronized
+3.使用ThreadLocal,并重写initialValue方法
+4.使用Java8日期API
